@@ -1,0 +1,98 @@
+{
+  "questionnaires": [
+    {
+      "id": "1",
+      "questionTitle": "GoTech questionnaire",
+      "questionSubtitle": "Show me what you got!",
+      "questions": [
+        {
+        "id": "1",
+        "type": "single",
+        "required": true,
+          "questionText": "What language is your favorite?",
+          "additionalQuestions": {
+            "parentIds": ["1_2"],
+            "questions": [{
+              "id": "1_1_1",
+              "type": "text",
+              "questionBody": null,
+              "questionText": "Why do you prefer TypeScript?"
+            }]
+          },
+        "answers": {
+          "variants": [
+            {
+            "id": "1_1",
+            "text": "JavaScript"
+          },
+            {
+              "id": "1_2",
+              "text": "TypeScript"
+            },
+            {
+              "id": "1_3",
+              "text": "CoffeeScript"
+            }
+          ]
+        }
+      },
+        {
+          "id": "2",
+          "type": "text",
+          "questionText": "What do you like about programming?",
+          "required": false,
+          "answers": null
+        },
+        {
+          "id": "3",
+          "type": "single",
+          "required": true,
+          "questionText": "How was the assignment?",
+          "answers": {
+            "variants": [
+              {
+                "id": "3_1",
+                "text": "Easy"
+              },
+              {
+                "id": "3_2",
+                "text": "Medium"
+              },
+              {
+                "id": "3_3",
+                "text": "Hard"
+              },
+              {
+                "id": "3_4",
+                "text": "",
+                "isOtherField": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "4",
+          "type": "multiple",
+          "required": true,
+          "questionText": "Pick interesting staff",
+          "answers": {
+            "variants": [
+              {
+                "id": "4_1",
+                "text": "Types"
+              },
+              {
+                "id": "4_2",
+                "text": "Layout"
+              },
+              {
+                "id": "4_3",
+                "text": "Architecture"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
